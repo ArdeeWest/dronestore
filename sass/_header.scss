@@ -1,0 +1,94 @@
+.header {
+  .container {
+    @include flex($jc: space-between);
+  }
+
+  &__logo {
+    @include flex();
+
+    &:hover,
+    &:focus {
+      .header__logo-text {
+        color: #ede7fa;
+      }
+    }
+  }
+
+  &__logo-text {
+    margin-left: 5px;
+    @include font('Nunito Semibold', $fw: 600, $fs: 34px, $lh: 1.35);
+    color: $tertiary-text-color;
+  }
+
+  .site-menu {
+    @include flex($jc: space-between);
+    flex-grow: 1;
+    @include font('Nunito Semibold', $fw: 600, $fs: 16px);
+
+    margin-right: 92px;
+
+    &__list {
+      display: flex;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 40px;
+    }
+
+    &__link {
+      color: $tertiary-text-color;
+      display: block;
+      padding: 44px 0;
+      transition: transform 280ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        transform: scale(1.15);
+      }
+    }
+  }
+
+  &__reg {
+    @include font('Nunito Semibold', $fw: 600, $fs: 16px);
+
+    &-login {
+      margin-right: 21px;
+      color: $tertiary-text-color;
+      transition: transform 280ms cubic-bezier(0.4, 0, 0.2, 1);
+      display: inline-block;
+
+      &:hover,
+      &:focus {
+        transform: scale(1.15);
+      }
+    }
+
+    &-signup {
+      @include font('Nunito Bold', $fw: 700, $fs: 16px);
+
+      display: inline-block;
+      background-color: #ffffff;
+      padding: 19px 0;
+      min-width: 143px;
+      border-radius: 6px;
+      outline: none;
+      border: transparent;
+      cursor: pointer;
+      transition: background-color 280ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &--purple {
+        @include text-gradient;
+      }
+
+      &:hover,
+      &:focus {
+        background: #ede7fa;
+      }
+    }
+  }
+}
+
+// linear-gradient(
+//           rgba(111, 88, 227, 0.15) 10.51%,
+//           rgba(112, 78, 124, 0.15) 94.77%
+//         );
