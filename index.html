@@ -4,223 +4,263 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Droxestore - shop of modern drones for different purposes" />
-    <title>Dronestore</title>
+    <meta
+      name="description"
+      content="Droxestore &ndash; shop of modern drones for different purposes"
+    />
+    <title>Droxestore</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
-      <nav>
-      <a href="./index.html">
-        <img src="./img/logo-drone.svg" alt="Droxestore logo" />
-            DroxStore</a>
-        <ul>
-            <a href="">Services</a>
-          </li>
-          <li>
-            <a href="">About</a>
-          </li>
-          <li>
-            <a href="">Work</a>
-          </li>
-          <li>
-            <a href="">Resouces</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div>
-          <a href="">Login</a>
-          <button type="button">Sign Up</button>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="site-menu">
+          <a class="header__logo" href="./index.html">
+            <img class="header__logo-img" src="./img/logo-drone.svg" alt="Droxestore logo" /><span
+              class="header__logo-text"
+              >DroxStore</span
+            ></a
+          >
+          <ul class="site-menu__list">
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="">Services</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="">About</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="">Work</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="">Resouces</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__reg">
+          <a class="header__reg-login" href="">Login</a>
+          <button class="header__reg-signup" type="button">
+            <span class="header__reg-signup--purple">Sign Up</span>
+          </button>
+        </div>
       </div>
     </header>
     <main>
-<!-- Section hero -->
-        <section>
-            <h1>Get coolest Drone and make your dream</h1>
-            <img src="./img/drone.png" alt="White drone with camera">
-        </section>
- <!-- Section events -->
-        <section>
-            <p>Best Quality Features</p>
-            <h2>Find out our top quality features</h2>
-            <ul>
-                <li>
-                    <div>
-                    <svg width="49" height="43.8">
-                        <use href="./img/icons.svg#events-icon">                          
-                        </use>
+      <!-- Section hero -->
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">Get coolest Drone and <br />make your dream come true</h1>
+
+          <img class="hero__img" src="./img/drone.png" alt="White drone with camera" />
+        </div>
+      </section>
+      <!-- Section events -->
+      <section class="events">
+        <div class="container events__container">
+          <p class="events__pre-text">Best Quality Features</p>
+          <h2 class="events__title">Find out our <br />top quality features</h2>
+          <ul class="events__list">
+            <li class="events__item">
+              <div class="events__card">
+                <a href="" class="events__link">
+                  <div class="events__img-box events__img-box--purple">
+                    <svg class="events__img" width="49" height="43.8">
+                      <use href="./img/icons.svg#events-icon"></use>
                     </svg>
-                    </div>
-                    <h3>Corporate Events</h3>
-                    <p>Quickly Compare Thousands Of Make Tours By Reading Genuine </p>
-                </li>
-                <li>
-                    <div>
-                    <svg width="49" height="43.8">
-                        <use href="./img/icons.svg#events-icon">                          
-                        </use>
+                  </div>
+                  <h3 class="events__subtitle">Corporate Events</h3>
+                  <p class="events__description">
+                    Quickly Compare Thousands Of Make Tours By Reading Genuine
+                  </p>
+                </a>
+              </div>
+            </li>
+            <li class="events__item">
+              <div class="events__card">
+                <a href="" class="events__link">
+                  <div class="events__img-box events__img-box--orange">
+                    <svg class="events__img" width="49" height="43.8">
+                      <use href="./img/icons.svg#events-icon"></use>
                     </svg>
-                    </div>
-                    <h3>Wedding Celebrations</h3>
-                    <p>Quickly Compare Thousands Of Make Tours By Reading Genuine </p>
-                </li>
-                <li>
-                    <div>
-                    <svg width="49" height="43.8">
-                        <use href="./img/icons.svg#events-icon">                          
-                        </use>
+                  </div>
+                  <h3 class="events__subtitle">Wedding Celebrations</h3>
+                  <p class="events__description">
+                    Quickly Compare Thousands Of Make Tours By Reading Genuine
+                  </p>
+                </a>
+              </div>
+            </li>
+            <li class="events__item">
+              <div class="events__card">
+                <a href="" class="events__link">
+                  <div class="events__img-box events__img-box--yellow">
+                    <svg class="events__img" width="49" height="43.8">
+                      <use href="./img/icons.svg#events-icon"></use>
                     </svg>
-                    </div>
-                    <h3>Concerts &amp; Festivals</h3>
-                    <p>Quickly Compare Thousands Of Make Tours By Reading Genuine </p>
-                </li>
-            </ul>
-        </section>
-<!-- Section features -->
-        <section>
-            <p>Best Quality Features</p>
-            <h2>See Our Quality Features</h2>
-            <ul>
-                <li>
-                    <svg width="26.38" height="23.6">
-                        <use href="./img/icons.svg#feature-icon"></use>
-                    </svg>
-                    <p>Amazing Air Cortroller</p>
-                    <p>Quickly compare thousands of make tours by reading genuine </p>
-                </li>
-                <li>
-                    <svg width="26.38" height="23.6">
-                        <use href="./img/icons.svg#feature-icon"></use>
-                    </svg>
-                    <p>Fixable wheels</p>
-                    <p>Quickly compare thousands of make tours by reading genuine </p>
-                </li>
-                <li>
-                    <svg width="26.38" height="23.6">
-                        <use href="./img/icons.svg#feature-icon"></use>
-                    </svg>
-                    <p>Strong Support</p>
-                    <p>Quickly compare thousands of make tours by reading genuine </p>
-                </li>
-            </ul>
-            <img src="./img/drone.png" alt="White drone with camera">
-            <ul>
-                <li>
-                    <svg width="26.38" height="23.6">
-                        <use href="./img/icons.svg#feature-icon"></use>
-                    </svg>
-                    <p>Super Fastest Fan</p>
-                    <p>Quickly compare thousands of make tours by reading genuine </p>
-                </li>
-                <li>
-                    <svg width="26.38" height="23.6">
-                        <use href="./img/icons.svg#feature-icon"></use>
-                    </svg>
-                    <p>Strong the Wheel</p>
-                    <p>Quickly compare thousands of make tours by reading genuine </p>
-                </li>
-                <li>
-                    <svg width="26.38" height="23.6">
-                        <use href="./img/icons.svg#feature-icon"></use>
-                    </svg>
-                    <p>612 Mega Pixels Camera</p>
-                    <p>Quickly compare thousands of make tours by reading genuine </p>
-                </li>
-            </ul>
-        </section>
-        <!-- Section store gallery -->
-        <section>
-            <p>Best Quality Features</p>
-            <h2>Get Our Amazing Drones</h2>
-            <ul>
-                <li>
-                    <img src="./img/drone-model-1.png">
-                    <p>Art of Flight Drones</p>
-                    <p>$546.98</p>
-                    <button type="button">Get it</button>
-                </li>
-                <li>
-                    <img src="./img/drone-model-3.png">
-                    <p>Art of Flight Drones</p>
-                    <p>$752.45</p>
-                    <button type="button">Get it</button>
-                </li>
-                <li>
-                    <img src="./img/drone-model-2.png">
-                    <p>Art of Flight Drones</p>
-                    <p>$670.30</p>
-                    <button type="button">Get it</button>
-                </li>
-            </ul>
-        </section>
+                  </div>
+                  <h3 class="events__subtitle">Concerts &amp; Festivals</h3>
+                  <p class="events__description">
+                    Quickly Compare Thousands Of Make Tours By Reading Genuine
+                  </p>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section features -->
+      <section>
+        <p>Best Quality Features</p>
+        <h2>See Our Quality Features</h2>
+        <ul>
+          <li>
+            <svg width="26.38" height="23.6">
+              <use href="./img/icons.svg#feature-icon"></use>
+            </svg>
+            <p>Amazing Air Cortroller</p>
+            <p>Quickly compare thousands of make tours by reading genuine</p>
+          </li>
+          <li>
+            <svg width="26.38" height="23.6">
+              <use href="./img/icons.svg#feature-icon"></use>
+            </svg>
+            <p>Fixable wheels</p>
+            <p>Quickly compare thousands of make tours by reading genuine</p>
+          </li>
+          <li>
+            <svg width="26.38" height="23.6">
+              <use href="./img/icons.svg#feature-icon"></use>
+            </svg>
+            <p>Strong Support</p>
+            <p>Quickly compare thousands of make tours by reading genuine</p>
+          </li>
+        </ul>
+        <img src="./img/drone.png" alt="White drone with camera" />
+        <ul>
+          <li>
+            <svg width="26.38" height="23.6">
+              <use href="./img/icons.svg#feature-icon"></use>
+            </svg>
+            <p>Super Fastest Fan</p>
+            <p>Quickly compare thousands of make tours by reading genuine</p>
+          </li>
+          <li>
+            <svg width="26.38" height="23.6">
+              <use href="./img/icons.svg#feature-icon"></use>
+            </svg>
+            <p>Strong the Wheel</p>
+            <p>Quickly compare thousands of make tours by reading genuine</p>
+          </li>
+          <li>
+            <svg width="26.38" height="23.6">
+              <use href="./img/icons.svg#feature-icon"></use>
+            </svg>
+            <p>612 Mega Pixels Camera</p>
+            <p>Quickly compare thousands of make tours by reading genuine</p>
+          </li>
+        </ul>
+      </section>
+      <!-- Section store gallery -->
+      <section>
+        <p>Best Quality Features</p>
+        <h2>Get Our Amazing Drones</h2>
+        <ul>
+          <li>
+            <img src="./img/drone-model-1.png" />
+            <p>Art of Flight Drones</p>
+            <p>$546.98</p>
+            <button type="button">Get it</button>
+          </li>
+          <li>
+            <img src="./img/drone-model-3.png" />
+            <p>Art of Flight Drones</p>
+            <p>$752.45</p>
+            <button type="button">Get it</button>
+          </li>
+          <li>
+            <img src="./img/drone-model-2.png" />
+            <p>Art of Flight Drones</p>
+            <p>$670.30</p>
+            <button type="button">Get it</button>
+          </li>
+        </ul>
+      </section>
     </main>
     <footer>
-        <a href="./index.html">
-            <img src="./img/logo_black.svg" alt="Droxestore logo">
-            DroxeStore
-        </a>
-        <p>DroxeStore is authorized and the largest drone service center in USA.</p>
-        <!-- list of social media -->
-        <ul>
-            <li>
-                <a href="" aria-label="Facebook">
-                    <svg width="9.53" height="17.74">
-                        <use href="./img/icons.svg#facebook-icon"></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="" aria-label="Twitter">
-                    <svg width="17.71" height="14.38">
-                        <use href="./img/icons.svg#twitter-icon"></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="" aria-label="Google">
-                    <svg width="21.31" height="13.31">
-                        <use href="./img/icons.svg#google-icon"></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="" aria-label="Linkedin">
-                    <svg width="15.52" height="15.49">
-                        <use href="./img/icons.svg#linkedin-icon"></use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-        <!-- List of links in footer -->
-        <h2>Services</h2>
-        <ul>
-            <li>Online Shop</li>
-            <li>Rent Drone </li>
-            <li>Rurchase Drone</li>
-            <li>Repaire Drone</li>
-            <li>Find the Store</li>
-        </ul>
+      <a href="./index.html">
+        <img src="./img/logo_black.svg" alt="Droxestore logo" />
+        DroxeStore
+      </a>
+      <p>DroxeStore is authorized and the largest drone service center in USA.</p>
+      <!-- list of social media -->
+      <ul>
+        <li>
+          <a href="" aria-label="Facebook">
+            <svg width="9.53" height="17.74">
+              <use href="./img/icons.svg#facebook-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="" aria-label="Twitter">
+            <svg width="17.71" height="14.38">
+              <use href="./img/icons.svg#twitter-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="" aria-label="Google">
+            <svg width="21.31" height="13.31">
+              <use href="./img/icons.svg#google-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="" aria-label="Linkedin">
+            <svg width="15.52" height="15.49">
+              <use href="./img/icons.svg#linkedin-icon"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <!-- List of links in footer -->
+      <h2>Services</h2>
+      <ul>
+        <li>Online Shop</li>
+        <li>Rent Drone</li>
+        <li>Rurchase Drone</li>
+        <li>Repaire Drone</li>
+        <li>Find the Store</li>
+      </ul>
 
-        <h2>Support</h2>
-        <ul>
-            <li>Account</li>
-            <li>Legal</li>
-            <li>Contact</li>
-            <li>Terms&amp;Condition</li>
-            <li>Privacy Policiy</li>
-        </ul>
+      <h2>Support</h2>
+      <ul>
+        <li>Account</li>
+        <li>Legal</li>
+        <li>Contact</li>
+        <li>Terms&amp;Condition</li>
+        <li>Privacy Policiy</li>
+      </ul>
 
-        <h2>Links</h2>
-        <ul>
-            <li>Profresonal Trainer</li>
-            <li>Live Booking</li>
-            <li>Testimonials </li>
-            <li>Our Team</li>
-            <li>Working agent</li>
-        </ul>
-        <p>2021 &#169; Created by Creativepeoples. All rights reserved</p>
+      <h2>Links</h2>
+      <ul>
+        <li>Profresonal Trainer</li>
+        <li>Live Booking</li>
+        <li>Testimonials</li>
+        <li>Our Team</li>
+        <li>Working agent</li>
+      </ul>
+      <p>2021 &#169; Created by Creativepeoples. All rights reserved</p>
     </footer>
   </body>
 </html>
