@@ -1,0 +1,18 @@
+.hero {
+  padding-top: 74px;
+  padding-bottom: 58px;
+
+  &__title {
+    @include font('Gilroy Black', $fw: 900, $fs: 70px, $lh: 1.4);
+    color: #f2f2f2;
+    text-align: center;
+    margin-bottom: 52px;
+    text-transform: capitalize;
+    padding-right: 40px;
+  }
+
+  &__img {
+    margin-left: auto;
+    padding-right: 83px;
+  }
+}
