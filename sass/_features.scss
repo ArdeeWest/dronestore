@@ -1,0 +1,162 @@
+.features {
+  padding-top: 87px;
+  padding-bottom: 97px;
+  
+
+  &__container {
+      position: relative;
+  }
+
+  &__pretext {
+    @include font('Product Sans', $fw: 400, $fs: 22px, $lh: 1.45);
+    @include text-gradient;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    @extend .events__title;
+    text-align: center;
+    margin-bottom: 189px;
+  }
+
+  
+  &__wrapper {
+    @include flex($d: flex, $ai: flex-start, $jc: space-between)
+  }
+
+  &__item {
+    position: relative;
+      max-width: 299px;
+  }
+
+ 
+  .left-side__point {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    
+    &--orange {
+      transform: translate(208px, -16px);
+    }
+
+    &--green {
+      transform: translate(209px, -167px);
+    }
+
+    &--blue {
+      transform: translate(255px, -301px);
+    }
+  }
+
+  .right-side__point {
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    
+    &--red {
+      transform: translate(-248px, -40px);
+    }
+
+    &--pink {
+      transform: translate(-205px, -166px);
+    }
+
+    &--dark-blue {
+      transform: translate(-298px, -350px);
+    }
+  }
+
+  .sidebar {
+      &__left-list {
+        text-align: right;
+        transform: translateX(-20px);
+    }
+
+     &__right-list {
+        margin-top: 31px;
+        transform: translateX(25px);
+     }
+
+    &__item--m-gap:not(:last-child) {
+        margin-bottom: 101px;
+    }
+
+    &__item--sm-gap:not(:last-child) {
+        margin-bottom: 91px;
+    }
+
+    &__icon-box {
+        margin-left: 0;
+    }
+  }
+
+  &__icon-box {
+      @include sizes($w: 56px, $h: 56px);
+      border-radius: 6px;
+      margin-left: auto;
+      margin-bottom: 15px;
+      text-align: center;
+
+      &--orange {
+          background-color: #F2994A;
+      }
+
+      &--green {
+          background-color: #1BBA54;
+      }
+
+      &--blue {
+          background-color: #56CCF2;
+      }
+
+      &--red {
+          background-color: #EB5757;
+      }
+
+      &--pink {
+          background-color: #FEA481;
+      }
+
+      &--dark-blue {
+          background-color: #00928D;
+      }
+  }
+
+  &__icon {
+      fill: #ffffff;
+      transform: translateY(50%);
+    }
+  
+  &__subtitle {
+    @include font('Gilroy Bold', $fs: 24px, $lh: 1.166);
+    letter-spacing: -0.015em;
+    color: $main-title-color;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+      @include font($lh: 1.81);
+      color: $secondary-text-color;
+      text-transform: capitalize;     
+      
+  }
+
+  &__bg-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 250px);
+    width: 681px;
+    height: 681px;
+    background-color: #F2F2F2;
+    border-radius: 50%;
+  }
+
+  &__img {
+    transform: translate(40px, 167px);
+   
+  }
+
+  
+}
