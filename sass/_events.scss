@@ -1,12 +1,12 @@
 .events {
   padding-top: 58px;
-  padding-bottom: 141px;
+  padding-bottom: 150px;
 
   &__container {
     padding-left: 38px;
   }
 
-  &__pre-text {
+  &__pretext {
     @include font('Product Sans', $fw: 400, $fs: 22px, $lh: 1.45);
     @include text-gradient;
     margin-bottom: 10px;
@@ -26,6 +26,7 @@
     @include font('Gilroy Bold', $fw: 700, $fs: 50px, $lh: 1.34);
     color: $main-title-color;
     text-transform: capitalize;
+    white-space: pre-line;
     margin-bottom: 66px;
   }
 
