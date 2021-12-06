@@ -1,0 +1,127 @@
+.store {
+    padding-top: 90px;
+    padding-bottom: 95px;
+    background-image: url(../img/ellipse.png);
+    background-repeat: no-repeat;
+    background-position: right 73px;
+
+    &__pretext {
+     @extend .features__pretext;
+    }
+
+    &__title {
+      @extend .features__title;
+      margin-bottom: 64px;
+    }
+
+    &__list {
+     display: flex;
+     align-items: center;
+    }
+
+    &__item {
+       flex-grow: 1;
+       flex-basis: 0;
+    
+        &:not(:last-child) {
+        margin-right: 25px;
+        }
+    }
+
+    &__card {
+        padding: 17px 19px 30px;
+        border-radius: 8px;
+        border: 0.82px solid rgba(0, 0, 0, 0.18);
+        max-width: 410px;
+        min-width: 320px;
+        background-color: #ffffff;
+
+    }
+
+    &__img-box {
+        display: flex;
+        min-height: 278px;
+        border-radius: 8px;
+
+        &--blue {
+            background-color: rgba(87, 172, 229, 0.2);
+         }
+ 
+         &--pink {
+             background-color: rgba(242, 153, 74, 0.2);
+         }
+ 
+         &--green {
+             background-color: rgba(39, 174, 96, 0.2);
+         }
+    }
+
+    &__img {
+        margin: auto;
+    }
+
+   
+    &__text-content {
+        @include flex($jc: space-between);
+        padding-top: 28px;
+    }
+
+    &__product-name {
+        @include font('Gilroy Bold', $fs: 24px, $lh: 1.16);
+        letter-spacing: -0.015em;
+        color: $main-title-color;
+        margin-bottom: 7px;
+    }
+
+    &__price {
+        @include font('Nunito Bold', $fw:900, $fs: 20px, $lh: 1.36);
+        letter-spacing: -0.015em;
+        @include text-gradient;
+    }
+
+    &__btn {
+        display: inline-block;
+        @include font('Nunito Semibold', $fs: 16px, $lh: 1.384);
+        width: 83px;
+        height: 46px;
+        border: none;
+        border-radius: 3px;
+        color: $tertiary-text-color;
+        text-transform: capitalize;
+
+        &--blue {
+            background-color: #1664F9;
+        }
+
+        &--pink {
+            background-color: #F2994A;
+        }
+
+        &--green {
+            background-color: #27AE60;
+        }
+    }
+
+//    custom pagination for slider dots
+
+    .tns-nav {
+        text-align: center;
+        margin-top: 48px;
+
+        & button {
+        @include sizes($w: 19px, $h: 19px);
+        padding: 0;
+        margin: 0 5px;
+        border-radius: 50%;
+        background: #ddd;
+        border: 0;
+                
+        &.tns-nav-active {
+        background: linear-gradient(#6f58e3, #bb6bd9);
+    }
+   }
+  }
+        
+} 
+    
+    
