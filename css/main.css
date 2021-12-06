@@ -84,14 +84,15 @@ a {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: white;
   color: #555185;
   font-family: 'Nunito Regular', sans-serif;
   font-style: normal;
-  background-image: url(../img/bg-light-purple.svg), url(../img/bg-purple.svg);
+  background-image: url(../img/bg-light-purple.svg), url(../img/bg-purple.svg), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), color-stop(55%, rgba(188, 173, 235, 0.1)));
+  background-image: url(../img/bg-light-purple.svg), url(../img/bg-purple.svg), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(188, 173, 235, 0.1) 55% rgba(102, 58, 237, 0.1) 100%);
   background-position: left top;
   background-repeat: no-repeat;
-  background-size: 100% 309px, 100% 822px;
+  background-size: 100% 309px, 100% 822px, cover;
 }
 
 .container {
@@ -234,6 +235,7 @@ body {
 
 .header__reg-signup:hover .header__reg-signup--purple, .header__reg-signup:focus .header__reg-signup--purple {
   background: #ffffff;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -291,7 +293,7 @@ body {
           transform: translateY(-6px);
 }
 
-.events__title, .features__title {
+.events__title, .features__title, .store__title {
   font-family: "Gilroy Bold";
   font-weight: 700;
   font-size: 50px;
@@ -374,7 +376,7 @@ body {
   position: relative;
 }
 
-.features__pretext {
+.features__pretext, .store__pretext {
   font-family: "Product Sans";
   font-weight: 400;
   font-size: 22px;
@@ -386,7 +388,7 @@ body {
   margin-bottom: 10px;
 }
 
-.features__title {
+.features__title, .store__title {
   text-align: center;
   margin-bottom: 189px;
 }
@@ -547,5 +549,151 @@ body {
 .features__img {
   -webkit-transform: translate(40px, 167px);
           transform: translate(40px, 167px);
+}
+
+.store {
+  padding-top: 90px;
+  padding-bottom: 95px;
+  background-image: url(../img/ellipse.png);
+  background-repeat: no-repeat;
+  background-position: right 73px;
+}
+
+.store__title {
+  margin-bottom: 64px;
+}
+
+.store__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.store__item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+}
+
+.store__item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.store__card {
+  padding: 17px 19px 30px;
+  border-radius: 8px;
+  border: 0.82px solid rgba(0, 0, 0, 0.18);
+  max-width: 410px;
+  min-width: 320px;
+  background-color: #ffffff;
+}
+
+.store__img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 278px;
+  border-radius: 8px;
+}
+
+.store__img-box--blue {
+  background-color: rgba(87, 172, 229, 0.2);
+}
+
+.store__img-box--pink {
+  background-color: rgba(242, 153, 74, 0.2);
+}
+
+.store__img-box--green {
+  background-color: rgba(39, 174, 96, 0.2);
+}
+
+.store__img {
+  margin: auto;
+}
+
+.store__text-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 28px;
+}
+
+.store__product-name {
+  font-family: "Gilroy Bold";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: -0.015em;
+  color: #0a0951;
+  margin-bottom: 7px;
+}
+
+.store__price {
+  font-family: "Nunito Bold";
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1.36;
+  letter-spacing: -0.015em;
+  background: -webkit-linear-gradient(#6f58e3, #bb6bd9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.store__btn {
+  display: inline-block;
+  font-family: "Nunito Semibold";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.384;
+  width: 83px;
+  height: 46px;
+  border: none;
+  border-radius: 3px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.store__btn--blue {
+  background-color: #1664F9;
+}
+
+.store__btn--pink {
+  background-color: #F2994A;
+}
+
+.store__btn--green {
+  background-color: #27AE60;
+}
+
+.store .tns-nav {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.store .tns-nav button {
+  width: 19px;
+  height: 19px;
+  padding: 0;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: #ddd;
+  border: 0;
+}
+
+.store .tns-nav button.tns-nav-active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#6f58e3), to(#bb6bd9));
+  background: linear-gradient(#6f58e3, #bb6bd9);
 }
 /*# sourceMappingURL=main.css.map */
