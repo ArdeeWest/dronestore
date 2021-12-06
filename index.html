@@ -16,6 +16,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -230,29 +232,97 @@
       </section>
 
       <!-- Section store gallery -->
-      <section>
-        <p>Best Quality Features</p>
-        <h2>Get Our Amazing Drones</h2>
-        <ul>
-          <li>
-            <img src="./img/drone-model-1.png" />
-            <p>Art of Flight Drones</p>
-            <p>$546.98</p>
-            <button type="button">Get it</button>
+      <section class="store">
+        <div class="container store__container">
+        <p class="store__pretext">Best Quality Features</p>
+        <h2 class="store__title">Get Our Amazing Drones</h2>
+        <ul id="responsive" class="store__list slider">
+          <li class="store__item">
+            <div class="store__card">
+              <div class="store__img-box store__img-box--blue">
+                <img class="store__img" src="./img/drone-model-1.png" alt="Flight drone" />
+              </div>
+            <div class="store__text-content">
+            <div class="store__info">
+            <h3 class="store__product-name">Art of Flight Drones</h3>
+            <p class="store__price">$546.98</p>
+            </div>
+            <button class="store__btn store__btn--blue" type="button">Get it</button>
+            </div>
+            </div>
           </li>
-          <li>
-            <img src="./img/drone-model-3.png" />
-            <p>Art of Flight Drones</p>
-            <p>$752.45</p>
-            <button type="button">Get it</button>
+          <li class="store__item">
+            <div class="store__card">
+              <div class="store__img-box store__img-box--pink">
+            <img class="store__img" src="./img/drone-model-3.png" alt="Flight drone" />
+              </div>
+            <div class="store__text-content">
+              <div class="store__info">
+            <h3 class="store__product-name">Art of Flight Drones</h3>
+            <p class="store__price">$752.45</p>
+            </div>
+            <button class="store__btn store__btn--pink" type="button">Get it</button>
+            </div>
+          </div>
           </li>
-          <li>
-            <img src="./img/drone-model-2.png" />
-            <p>Art of Flight Drones</p>
-            <p>$670.30</p>
-            <button type="button">Get it</button>
+          <li class="store__item">
+            <div class="store__card">
+              <div class="store__img-box store__img-box--green">
+            <img class="store__img" src="./img/drone-model-2.png" alt="Flight drone" />
+              </div>
+            <div class="store__text-content">
+              <div class="store__info">
+            <h3 class="store__product-name">Art of Flight Drones</h3>
+            <p class="store__price">$670.30</p>
+            </div>
+            <button class="store__btn store__btn--green" type="button">Get it</button>
+            </div>
+            </div>
+          </li>
+          <li class="store__item">
+            <div class="store__card">
+              <div class="store__img-box store__img-box--blue">
+                <img class="store__img" src="./img/drone-model-4.png" alt="Flight drone" />
+              </div>
+            <div class="store__text-content">
+            <div class="store__info">
+            <h3 class="store__product-name">Art of Flight Drones</h3>
+            <p class="store__price">$546.98</p>
+            </div>
+            <button class="store__btn store__btn--blue" type="button">Get it</button>
+            </div>
+            </div>
+          </li>
+          <li class="store__item">
+            <div class="store__card">
+              <div class="store__img-box store__img-box--pink">
+            <img class="store__img" src="./img/drone-model-5.png" alt="Flight drone" />
+              </div>
+            <div class="store__text-content">
+              <div class="store__info">
+            <h3 class="store__product-name">Art of Flight Drones</h3>
+            <p class="store__price">$752.45</p>
+            </div>
+            <button class="store__btn store__btn--pink" type="button">Get it</button>
+            </div>
+          </div>
+          </li>
+          <li class="store__item">
+            <div class="store__card">
+              <div class="store__img-box store__img-box--green">
+            <img class="store__img" src="./img/drone-model-6.png" alt="Flight drone" />
+              </div>
+            <div class="store__text-content">
+              <div class="store__info">
+            <h3 class="store__product-name">Art of Flight Drones</h3>
+            <p class="store__price">$670.30</p>
+            </div>
+            <button class="store__btn store__btn--green" type="button">Get it</button>
+            </div>
+            </div>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <footer>
@@ -326,6 +396,11 @@
     <!-- scripts to draw dashed lines in the features section -->
     <script defer src="./js/leader-line.min.js"></script>
     <script defer src="./js/dashed-line.js"></script>
+
+    <!-- script for slider in the store section -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script defer src="./js/slider.js"></script>
+
     
 
    
