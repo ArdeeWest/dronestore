@@ -1,10 +1,16 @@
 .header {
+  position: relative;
+
   .container {
-    @include flex($jc: space-between);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   &__logo {
-    @include flex();
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     &:hover,
     &:focus {
@@ -14,21 +20,25 @@
     }
   }
 
-  &__logo-text {
-    margin-left: 5px;
-    @include font('Nunito Semibold', $fw: 600, $fs: 34px, $lh: 1.35);
+  &__logo-text {    
     color: $tertiary-text-color;
+    @include font($ff: 'Nunito Semibold', $fs: 34px, $lh: 1.35);
+    margin-left: 5px;
   }
 
   .site-menu {
+    color: $tertiary-text-color;
     @include flex($jc: space-between);
     flex-grow: 1;
-    @include font('Nunito Semibold', $fw: 600, $fs: 16px);
-
+    @include font($ff: 'Nunito Semibold', $fs: 16px);
     margin-right: 92px;
 
     &__list {
       display: flex;
+
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
     }
 
     &__item:not(:last-child) {
@@ -36,7 +46,7 @@
     }
 
     &__link {
-      color: $tertiary-text-color;
+      color: inherit;
       display: block;
       padding: 44px 0;
       transition: transform 280ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -49,14 +59,19 @@
   }
 
   &__reg {
-    @include font('Nunito Semibold', $fw: 600, $fs: 16px);
+    color: $tertiary-text-color;
+    @include font($ff: 'Nunito Semibold', $fw: 600, $fs: 16px);
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
 
     &-login {
-      margin-right: 21px;
-      color: $tertiary-text-color;
-      transition: transform 280ms cubic-bezier(0.4, 0, 0.2, 1);
       display: inline-block;
-
+      margin-right: 21px;
+      color: inherit;
+      transition: transform 280ms cubic-bezier(0.4, 0, 0.2, 1);
+      
       &:hover,
       &:focus {
         transform: scale(1.15);
@@ -64,9 +79,9 @@
     }
 
     &-signup {
-      @include font('Nunito Bold', $fw: 700, $fs: 16px);
-
       display: inline-block;
+      @include font($ff: 'Nunito Bold', $fw: 700, $fs: 16px);
+      
       background-color: #ffffff;
       padding: 19px 0;
       min-width: 143px;
@@ -77,6 +92,7 @@
       transition: all 280ms cubic-bezier(0.4, 0, 0.2, 1);
 
       &--purple {
+        color: rgba(148, 88, 227, 0.7);
         @include text-gradient;
       }
 
@@ -84,6 +100,7 @@
       &:focus {
         background-color: #9c63dd;;
         border: 2px solid #ffffff;
+
         .header__reg-signup--purple {
           background: #ffffff;
           background-clip: text;
