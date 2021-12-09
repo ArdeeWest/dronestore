@@ -1,25 +1,23 @@
 .features {
   padding-top: 87px;
   padding-bottom: 97px;
-  
 
   &__container {
-      position: relative;
+    position: relative;
   }
 
   &__pretext {
-    @include font('Product Sans', $fw: 400, $fs: 22px, $lh: 1.45);
-    @include text-gradient;
     text-align: center;
+    @include font($ff: 'Product Sans', $fw: 400, $fs: 22px, $lh: 1.45);
+    @include text-gradient;
     margin-bottom: 10px;
   }
 
   &__title {
-    @extend .events__title;
     text-align: center;
+    @extend .events__title;
     margin-bottom: 189px;
   }
-
   
   &__wrapper {
     @include flex($d: flex, $ai: flex-start, $jc: space-between)
@@ -27,9 +25,8 @@
 
   &__item {
     position: relative;
-      max-width: 299px;
+    max-width: 299px;
   }
-
  
   .left-side__point {
     position: absolute;
@@ -92,11 +89,12 @@
   }
 
   &__icon-box {
+      text-align: center;
       @include sizes($w: 56px, $h: 56px);
       border-radius: 6px;
       margin-left: auto;
       margin-bottom: 15px;
-      text-align: center;
+      
 
       &--orange {
           background-color: #F2994A;
@@ -129,15 +127,15 @@
     }
   
   &__subtitle {
-    @include font('Gilroy Bold', $fs: 24px, $lh: 1.166);
-    letter-spacing: -0.015em;
     color: $main-title-color;
+    @include font($ff: 'Gilroy Bold', $fw: 700, $fs: 24px, $lh: 1.166);
+    letter-spacing: -0.015em;
     margin-bottom: 20px;
   }
 
   &__description {
-      @include font($lh: 1.81);
       color: $secondary-text-color;
+      @include font($lh: 1.81);
       text-transform: capitalize;     
       
   }
@@ -147,16 +145,12 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, 250px);
-    width: 681px;
-    height: 681px;
+    @include sizes($w: 681px, $h: 681px);
     background-color: #F2F2F2;
     border-radius: 50%;
   }
 
   &__img {
     transform: translate(40px, 167px);
-   
   }
-
-  
 }
