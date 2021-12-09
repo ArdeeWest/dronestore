@@ -3,44 +3,47 @@
    padding-bottom: 42px;
 
    &__container {
-       display: flex;
-       justify-content: space-between;
-       margin-bottom: 58px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 58px;
    }
 
    &__logo {
-       @include flex($jc: flex-start);
-       margin-bottom: 26px;
+    margin-bottom: 26px;
+    @include flex($jc: flex-start);
+       
    }
 
    &__logo-text {
-       @extend .header__logo-text;
-       color: $main-title-color;
+    color: $main-title-color;
+    @extend .header__logo-text;
+       
    }
 
    &__company-info {
-       @include font($ff: 'Product Sans', $fs: 20px, $lh: 1.6);
-       color: $primary-text-color;
-       max-width: 310px; 
-       margin-bottom: 68px;
+    color: $primary-text-color;
+    @include font($ff: Product Sans, $fs: 20px, $lh: 1.6);
+    max-width: 310px; 
+    margin-bottom: 68px;
    }
 
    .socials {
-       &__list {
-        @include flex($jc: flex-start);
-       }
+        &__list {
+        display: flex; 
+        justify-content: flex-start;
+        }
 
        &__item {
-        @include sizes($w: 44.7px, $h: 44.7px);
         margin-right: 13px;
+        @include sizes($w: 44.7px, $h: 44.7px);
+        
        }
 
        &__link {
-        @include flex();
-        @include sizes($w: 100%, $h: 100%);
-        border-radius: 50%;
-        // background-color: rgba(111, 88, 227, 0.15,);
         background-image: linear-gradient(rgba(111, 88, 227, 0.15,), rgba(111, 88, 227, 0.15));
+        border-radius: 50%;
+        @include flex();
+        @include sizes($w: 100%, $h: 100%);        
         transition: background-image 280ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover, 
@@ -50,7 +53,7 @@
             .socials__icon {
                 fill: #ffffff;
             }
-        }
+          }
        }
 
        &__icon {
@@ -60,22 +63,23 @@
    }
 
    &__subtitle {
-    @include font($ff: 'Product Sans Bold', $fs: 30px, $lh: 1.2);
     color: $main-title-color;
+    @include font($ff: 'Product Sans Bold', $fs: 30px, $lh: 1.2);
     margin-bottom: 15px;
    }
 
    &__item {
+    color: $secondary-text-color;
     @include font($ff: 'Product Sans', $fs: 20px, $lh: 2.7); 
    }
 
    &__link {
-       color: $secondary-text-color;
+    color: inherit;
    }
 
    &__copyright {
-    @include font($ff: 'Product Sans', $fs: 18px, $lh: 1.2); 
     color: $secondary-text-color;
+    @include font($ff: 'Product Sans', $fs: 18px, $lh: 1.2); 
     text-align: center;
 
     &::before {
@@ -91,6 +95,5 @@
         color: inherit;
     }
    }
-
 }
 
