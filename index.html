@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Droxestore &ndash; shop of modern drones for different purposes"
+      content="DroxStore &ndash; shop of modern drones for different purposes"
     />
-    <title>Droxestore</title>
+    <title>DroxStore</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -33,9 +33,59 @@
               >DroxStore</span
             ></a
           >
+
+          <!-- Mobile menu -->
+
+          <button
+            class="mobile-menu__button mobile-menu__button--open js-open-menu"
+            type="button"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          >
+            <svg width="40" height="40" aria-label="Open mobile menu">
+              <use class="mobile-menu__icon-burger" href="./img/icons.svg#burger"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu__container js-menu-container">
+            <button
+              type="button"
+              class="mobile-menu__button mobile-menu__button--close js-close-menu"
+            >
+              <svg width="40" height="40" aria-label="Close mobile menu">
+                <use class="mobile-menu__icon-cross" href="./img/icons.svg#cross"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu__list" id="mobile-menu">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">Services</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">About</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">Work</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">Resources</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="mobile-menu__registration">
+              <button type="button" class="mobile-menu__login" href="#">
+                <span class="mobile-menu__login--purple">Login</span>
+              </button>
+              <button class="mobile-menu__signup" type="button">
+                <span class="mobile-menu__signup--white">Sign Up</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Desktop menu -->
           <ul class="site-menu__list">
             <li class="site-menu__item">
-              <a class="site-menu__link" href="">Services</a>
+              <a class="site-menu__link" href="#">Services</a>
             </li>
             <li class="site-menu__item">
               <a class="site-menu__link" href="">About</a>
@@ -44,7 +94,7 @@
               <a class="site-menu__link" href="">Work</a>
             </li>
             <li class="site-menu__item">
-              <a class="site-menu__link" href="">Resouces</a>
+              <a class="site-menu__link" href="">Resources</a>
             </li>
             <li class="site-menu__item">
               <a class="site-menu__link" href="">Contact</a>
@@ -59,6 +109,7 @@
         </div>
       </div>
     </header>
+
     <main>
       <!-- Section hero -->
       <section class="hero">
@@ -375,7 +426,8 @@
             <span class="footer__logo-text">DroxStore</span>
           </a>
           <p class="footer__company-info">
-            DroxStore is the largest authorized drone service center in USA, that offers high quality service.
+            DroxStore is the largest authorized drone service center in USA, that offers high
+            quality service.
           </p>
           <!-- list of social media -->
           <ul class="socials__list">
@@ -429,7 +481,6 @@
           </li>
         </ul>
 
-        
         <ul class="footer__list">
           <li class="footer__subtitle">Support</li>
           <li class="footer__item"><a class="footer__link" href="#">Account</a></li>
@@ -439,7 +490,6 @@
           <li class="footer__item"><a class="footer__link" href="#">Privacy Policy</a></li>
         </ul>
 
-        
         <ul class="footer__list">
           <li class="footer__subtitle">Links</li>
           <li class="footer__item"><a class="footer__link" href="#">Assets</a></li>
@@ -450,18 +500,21 @@
         </ul>
       </div>
 
-      <p class="footer__copyright"><a class="footer__copyright--link" href="#"
-        >Created by Creativepeoples. All rights reserved</a>
+      <p class="footer__copyright">
+        <a class="footer__copyright--link" href="#"
+          >Created by Creativepeoples. All rights reserved</a
+        >
       </p>
-
-      
     </footer>
+
+    <!-- script to close/open mobile menu  -->
+    <script defer src="./js/mobile-menu.js"></script>
 
     <!-- scripts to draw dashed lines in the features section -->
     <script defer src="./js/leader-line.min.js"></script>
     <script defer src="./js/dashed-line.js"></script>
 
-    <!-- script for slider in the store section -->
+    <!-- script for the slider in the store section -->
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"
