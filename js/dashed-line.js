@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){ 
+    if (window.innerWidth < 992) return false;
+
     let options = {
         endPlug: 'behind',
         color: 'rgba(10, 9, 81, 0.5)',
@@ -78,4 +80,5 @@ document.addEventListener('DOMContentLoaded', function(){
           )
       );
 
+        window.dispatchEvent(new Event('resize'));
   });
