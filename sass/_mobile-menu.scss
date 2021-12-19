@@ -15,7 +15,7 @@
     fill: #7e40a7;
   }
   
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 992px) {
       display: none;
     }
 
@@ -45,7 +45,7 @@
     height: 100vh;
     z-index: 5;
    
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(102, 58, 237, 0.4) 100%);
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(192, 178, 235) 100%);
     padding: 48px 30px;
     text-align: left;
   
