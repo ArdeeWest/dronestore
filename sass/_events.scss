@@ -2,8 +2,18 @@
   padding-top: 58px;
   padding-bottom: 150px;
 
+  @media screen and (max-width: 1199px) {
+    padding-top: 29px;
+    padding-bottom: 32px;
+    
+  }
+
   &__container {
-    padding-left: 38px;
+
+    @media screen and (min-width: 767px) {
+      padding-left: 38px;
+    }
+    
   }
 
   &__pretext {
@@ -11,6 +21,10 @@
     @include font($ff: 'Product Sans', $fw: 400, $fs: 22px, $lh: 1.45);
     @include text-gradient;
     margin-bottom: 10px;
+
+    @media screen and (max-width: 991px) {
+      text-align: center;      
+    }
 
     &::after {
       content: '';
@@ -29,15 +43,29 @@
     text-transform: capitalize;
     white-space: pre-line;
     margin-bottom: 66px;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 28px;
+    }
   }
 
   &__list {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+    }
+  }
+
+  &__item {
+    @media screen and (min-width: 320px) {
+      margin-bottom: 38px;
+    }
   }
 
   &__card {
-    width: 363px;
     text-align: center;
   }
 
@@ -72,6 +100,10 @@
     @include font($ff: 'Gilroy Bold', $fw: 700, $fs: 32px, $lh: 1.156);
     letter-spacing: -0.015em;
     margin-bottom: 24px;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 26px;
+    }
   }
 
   &__description {

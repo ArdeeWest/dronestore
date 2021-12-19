@@ -3,9 +3,26 @@
    padding-bottom: 42px;
 
    &__container {
+
+    @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 58px;
+   }
+
+   @media screen and (min-width: 1200px) {
+     margin-bottom: 0;
+   }
+  }
+
+   &__nav {
+     width: 100%;
+     margin-bottom: 40px;
+
+     @media screen and (min-width: 1199px) {
+       width: auto;       
+     }
    }
 
    &__logo {
@@ -23,8 +40,11 @@
    &__company-info {
     color: $primary-text-color;
     @include font($ff: Product Sans, $fs: 20px, $lh: 1.6);
-    max-width: 310px; 
     margin-bottom: 68px;
+
+    @media screen and (min-width: 1200px) {
+      max-width: 310px; 
+    }
    }
 
    .socials {
@@ -60,6 +80,10 @@
         fill: #555185;
         transition: fill 280ms cubic-bezier(0.4, 0, 0.2, 1);
        }
+   }
+
+   &__list {
+     margin-bottom: 40px;
    }
 
    &__subtitle {

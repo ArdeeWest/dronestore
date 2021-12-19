@@ -24,6 +24,10 @@
     color: $tertiary-text-color;
     @include font($ff: 'Nunito Semibold', $fs: 34px, $lh: 1.35);
     margin-left: 5px;
+
+    @media screen and (max-width: 575px) {
+      font-size: 22px;
+    }
   }
 
   .site-menu {
@@ -33,10 +37,19 @@
     @include font($ff: 'Nunito Semibold', $fs: 16px);
     margin-right: 92px;
 
+    @media screen and (max-width: 1199px) {
+      margin-right: 40px;
+    }
+
+    @media screen and (max-width: 991px) {
+      margin-right: 0;
+      padding-top: 12px;
+    }
+
     &__list {
       display: flex;
 
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 991px) {
         display: none;
       }
     }
@@ -62,7 +75,7 @@
     color: $tertiary-text-color;
     @include font($ff: 'Nunito Semibold', $fw: 600, $fs: 16px);
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
       display: none;
     }
 
