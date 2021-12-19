@@ -7,5 +7,9 @@ body {
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 100% 309px, 100% 822px, cover;
+
+  @media screen and (max-width: 991px) {
+    background-size:  100% 290px, 100% 650px, cover;    
+  }
   
 }
